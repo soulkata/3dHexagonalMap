@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad68e52880c03c46a5166c681716bda, type: 3}
+  m_Name: MapParms
+  m_EditorClassIdentifier: 
+  regionCount: {x: 30, y: 30}
+  regionSize: {x: 7, y: 7}
+  regionCenterSize: {x: 5, y: 5}
+  offsetFromPreviousCoordinate: {x: 1, y: 1}
+  chunkSize: {x: 15, y: 15}
+  radius: 1
+  heightScale: 20
+  waterMoisture: 0.8
+  percentualOfConnectionsAsNewRivers: 0.05
+  percentualOfConnectionsAsRiversExtensions: 0.1
+  percentualOfConnectionsAsMoutains: 0.007
+  riverConnectionDistance: 6
+  mountainConnectionDistance: 6
+  mountainStraitness:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3.0295887
+      outSlope: 3.0295887
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.035031844
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  mountainExtensionLenght:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 6
+      inSlope: 14.936054
+      outSlope: 14.936054
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4920349
+      value: 13.34906
+      inSlope: 14.685268
+      outSlope: 14.685268
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0104675
+      value: 20.832367
+      inSlope: 14.434484
+      outSlope: 14.434484
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  mountainConnectionHexagon:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.5
+      inSlope: 3.3537118
+      outSlope: 3.3537118
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5031738
+      value: 3.1875
+      inSlope: 3.9655347
+      outSlope: 3.9655347
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.14424944
+    - serializedVersion: 3
+      time: 1
+      value: 7
+      inSlope: 7.67371
+      outSlope: 7.67371
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  mountainHeightWeight:
+  - 100
+  - 10
+  - 10
+  - 10
+  standableLerpLocations: {x: 0.75, y: 0.9}
+  standableLerpHeight: {x: 0.1, y: 0.4}
+  noiseBaseLenght: 40
+  landDistributionWaterLevel: 0.3
+  borderOfTheWorldMinWater: 1
+  borderOfTheWorldMaxWater: 20
+  cornerOfTheWorldMinWater: 20
+  cornerOfTheWorldMaxWater: 50
+  riverInitialVolume:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1.1
+      inSlope: 0.6
+      outSlope: 0.6
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  riverVolumeGainPerTile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.07
+      inSlope: -0.030000001
+      outSlope: -0.030000001
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.04
+      inSlope: -0.030000001
+      outSlope: -0.030000001
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  riverHexagonByVolume:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.1970344
+      outSlope: 1.1970344
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.27866277
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.7401495
+      outSlope: 0.7401495
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5254234
+      outWeight: 0.07131306
+    - serializedVersion: 3
+      time: 5
+      value: 2
+      inSlope: 0.35767904
+      outSlope: 0.35767904
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.221367
+      outWeight: 0
+    - serializedVersion: 3
+      time: 10
+      value: 3
+      inSlope: 0.0887993
+      outSlope: 0.0887993
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.30182153
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  riverExtensionLenght:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 2
+      inSlope: 3
+      outSlope: 3
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 5
+      inSlope: 3
+      outSlope: 3
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  riverMoisture: 1
+  moistureDecay: 0.055
+  moistureDecayMountain: 0.125

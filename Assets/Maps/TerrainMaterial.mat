@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1668846265445303015
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TerrainMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 075119bdd8e0aa74ca0415e93ced394b,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BeachTexture:
+        m_Texture: {fileID: 2800000, guid: f52a58e959e9c9844bb8deb2cb1bca51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BiomeDesertTexture:
+        m_Texture: {fileID: 2800000, guid: b0dbde414673dab43ae3ce825635dc2f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BiomeForestTexture:
+        m_Texture: {fileID: 2800000, guid: f5a208950d2be9640a4cf1f49c46a3c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BiomeGrasslandTexture:
+        m_Texture: {fileID: 2800000, guid: 415a18b41720a3d409b2031e483becff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BiomeMetaTexture:
+        m_Texture: {fileID: 2800000, guid: 36c932d0e84bc894dba3ee9fda0b1b96, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BorealForest:
+        m_Texture: {fileID: 2800000, guid: 80cd370a16fdd334399c38bb8d432423, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Decalc:
+        m_Texture: {fileID: 2800000, guid: 13a7522881253f14a9ce0c434dc8a2cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalcTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DesertTexture:
+        m_Texture: {fileID: 2800000, guid: 6474dbb870493474691f2acc7073cee8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrassTexture:
+        m_Texture: {fileID: 2800000, guid: 415a18b41720a3d409b2031e483becff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrasslandTexture:
+        m_Texture: {fileID: 2800000, guid: 415a18b41720a3d409b2031e483becff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightBeachTexture:
+        m_Texture: {fileID: 2800000, guid: f52a58e959e9c9844bb8deb2cb1bca51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightIceTexture:
+        m_Texture: {fileID: 2800000, guid: 7a43ed54539eab64087f1079030a33c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMountainTexture:
+        m_Texture: {fileID: 2800000, guid: 17f1fb80b1250ef46808f99e2445163e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightWaterTexture:
+        m_Texture: {fileID: 2800000, guid: 3637336c6a3edd842ae254a7880a2a39, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IceTexture:
+        m_Texture: {fileID: 2800000, guid: 7a43ed54539eab64087f1079030a33c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MountainTexture:
+        m_Texture: {fileID: 2800000, guid: 17f1fb80b1250ef46808f99e2445163e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockRexture:
+        m_Texture: {fileID: 2800000, guid: 17f1fb80b1250ef46808f99e2445163e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SandTexture:
+        m_Texture: {fileID: 2800000, guid: f52a58e959e9c9844bb8deb2cb1bca51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TropicalForest:
+        m_Texture: {fileID: 2800000, guid: f5a208950d2be9640a4cf1f49c46a3c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TundraTexture:
+        m_Texture: {fileID: 2800000, guid: 8ac2fd79e73d1e540a5372b3ad6bbaeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterTexture:
+        m_Texture: {fileID: 2800000, guid: 3637336c6a3edd842ae254a7880a2a39, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _BeachStartHeight: 2.6
+    - _BeachTransitionHeight: 0.2
+    - _BiomeDesertSizeDown: 0.1
+    - _BiomeDesertSizeDownVariation: 0.05
+    - _BiomeDesertStart: 0.4
+    - _BiomeDesertStartVariation: 0.1
+    - _BiomeGrasslandSizeDown: 0.1
+    - _BiomeGrasslandSizeDownVariation: 0.05
+    - _BiomeGrasslandStart: 0.8
+    - _BiomeGrasslandStartVariation: 0.1
+    - _BiomeStartHeight: 9
+    - _BiomeTransitionHeight: 1.2
+    - _Blend: 0
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EndSlopeAngle: 30
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _GrassFullHeight: 8
+    - _GrassStartHeight: 10
+    - _HeightBeachSizeDown: 0.2
+    - _HeightBeachSizeDownVariation: 0.05
+    - _HeightBeachStart: 3
+    - _HeightBeachStartVariation: 0.05
+    - _HeightBiomeSizeDown: 1
+    - _HeightBiomeSizeDownVariation: 1
+    - _HeightBiomeStart: 9
+    - _HeightBiomeStartVariation: 2
+    - _HeightIceSizeUp: 3
+    - _HeightIceSizeUpVariation: 1
+    - _HeightIceStart: 11.5
+    - _HeightIceStartVariation: 1
+    - _HeightWaterSizeDown: 1.55
+    - _HeightWaterSizeDownVariation: 0.4
+    - _HeightWaterStart: 2.3
+    - _HeightWaterStartVariation: 0.2
+    - _IceStartHeight: 10
+    - _IceTransitionHeight: 1
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.005
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _RockFullHeight: 11
+    - _RockStartHeight: 12
+    - _SandFull: 2.3
+    - _SandHeight: 2.2
+    - _SandStart: 2.5
+    - _SandStartHeight: 2.6
+    - _SandTransitionHeight: 0.1
+    - _Scale1: 10
+    - _Scale2: 20
+    - _SlopeAngle: 32.8
+    - _SlopeEndAngle: 90
+    - _SlopeMax: 1
+    - _SlopeMin: -1
+    - _SlopeStartAngle: 30
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StartSlopeAngle: 10
+    - _Surface: 0
+    - _WaterFullHeight: 2
+    - _WaterHeight: 2
+    - _WaterStartHeight: 2.2
+    - _WaterTransitionHeight: 0.3
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+  m_BuildTextureStacks: []
